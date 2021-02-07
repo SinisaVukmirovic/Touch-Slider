@@ -27,3 +27,41 @@ img {
     transition: transform 300ms ease-out;
     cursor: grab;
 }
+
+.slide {
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    user-select: none;
+}
+    .slide img {
+        max-width: 100%;
+        max-height: 50%;
+        margin: 2rem auto;
+    }
+    .slide h2 {
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+    }
+    .slide h4 {
+        font-size: 1.5rem;
+    }
+
+.btn {
+    background-color: royalblue;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
+
+.grabbed {
+    cursor: grabbing;
+}
+
+.grabbed .slide img {
+    transform: scale(.97);
+}
