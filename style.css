@@ -10,7 +10,8 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: #222;
+    /* background-color: #222; */
+    background-image: linear-gradient(to right, #000, #222, #000);
     color: #ddd;
     line-height: 1.7;
 }
@@ -41,22 +42,24 @@ img {
     .slide img {
         max-width: 100%;
         max-height: 50%;
-        margin: 2rem auto;
         transition: transform 300ms ease-out;
     }
     .slide h2 {
+        color: #fff;
         font-size: 2.5rem;
         margin-bottom: .5rem;
     }
     .slide h4 {
+        color: cornflowerblue;
         font-size: 1.5rem;
+        margin: 2rem auto;
     }
 
 .btn {
     background-color: royalblue;
     color: #fff;
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: .5rem 1.5rem;
 }
 
 .grabbed {
